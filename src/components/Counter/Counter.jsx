@@ -13,13 +13,11 @@ const Counter = (props) => {
     };
 
     return (
-        <>
-            <div>
-                <button onClick={increment}>+</button>
-                <Counter initialValue={5} />
-                <button onClick={decrement}>-</button>
-            </div>
-        </>
+        <div>
+            <button onClick={increment}>+</button> 
+            {count}
+            <button onClick={decrement}>-</button>
+        </div>
     )
 }
 
